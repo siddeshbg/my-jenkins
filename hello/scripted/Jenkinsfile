@@ -1,5 +1,5 @@
 node {
   stage('Stage 1') {
-    echo 'Hello from Jenkinsfile written in scripted syntax'
+    echo 'Hello from Jenkinsfile written in Scripted syntax'
   }
 }
