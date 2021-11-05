@@ -1,9 +1,10 @@
+//Declarative syntax
 pipeline {
     agent any 
     stages {
         stage('Stage 1') {
             steps {
-                echo 'Hello world from Jenkinsfile written in Declarative syntax' 
+                echo 'Hello world from ${env.JOB_URL}' 
             }
         }
     }
