@@ -1,5 +1,6 @@
+//Scripted syntax
 node {
   stage('Stage 1') {
-    echo 'Hello from Jenkinsfile written in Scripted syntax'
+    echo "Hello World from ${env.JOB_URL} from node ${env.NODE_NAME}"
   }
 }
