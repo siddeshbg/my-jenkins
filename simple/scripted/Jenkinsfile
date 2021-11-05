@@ -8,7 +8,8 @@ node {
   stage('Test') {
     echo "Testing ..."
     sh 'test -f /tmp/'
-    sh 'test -f log.txt'
+    sh 'pwd'
+    sh 'ls'
   }
   stage('Deploy') {
     echo "Deploying ..."
