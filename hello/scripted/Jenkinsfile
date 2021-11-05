@@ -2,5 +2,6 @@
 node {
   stage('Stage 1') {
     echo "Hello World from ${env.JOB_URL} from node ${env.NODE_NAME}"
+    echo "Duration taken ${currentBuild.durationString}
   }
 }
