@@ -5,6 +5,8 @@ pipeline {
     stage('Build') {
       steps {
         echo "Building ..."
+        sh 'date > log.txt'
+        archiveArtifacts artifacts: '*.txt', fingerprint: true, followSymlinks: false
       }
     }
     stage('Test') {
